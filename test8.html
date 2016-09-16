@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>email validation</title>
+</head>
+<body>
+<script>
+function validate(form_id,email)
+{
+	var regex=/^([a-zA-Z0-9_\-\.]){1,}\@([a-zA-Z0-9_\-\.]){1,}\.([a-zA-Z]{2,4})$/;
+	var emailaddr=document.forms[form_id].elements[email].value;
+	if(regex.test(emailaddr)==false)
+		{
+		alert("entered an invalid email id");
+		document.forms[form_id].elements[email].focus();
+		return false;		
+		}
+	
+}
+
+</script>
+
+<form id="email_form" method="get" action="submit.html" 
+onsubmit="javascript:return validate('email_form','email');">
+  <p> enter the email address </p>
+  <input type=text name ="email"/>
+  <input type=submit value="Submit"/>  
+</form>
+</body>
+</html>

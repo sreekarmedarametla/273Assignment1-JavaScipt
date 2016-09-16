@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Switch</title>
+</head>
+<body>
+<p> Calculating a bill </p>
+<script>
+var item1=prompt("enter the first item");
+var total=0;
+switch(item1)
+{
+case "chicken": alert(item1+" costs 10");
+                total=total+10;  
+                break;                
+default: alert("no such item");
+           break;           
+}
+document.write("total bill is "+total);
+
+</script>
+
+</body>
+</html>

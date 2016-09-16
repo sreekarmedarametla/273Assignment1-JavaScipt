@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var fruits={"eatable":[
+{"name":"banana","age":32},
+{"name":"pineapple","age":44}
+]	,
+"managable":[
+ {"name":"king","age":50},
+{"name":"prince","age":45}
+ ]
+}
+document.write("first value is"+fruits.eatable[0].age);
+
+var text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+                        
+  obj= JSON.parse(text);
+  document.write("<br>")
+  document.write(" parsed value is "+obj.employees[0].firstName);
+
+</script>
+
+
+
+</body>
+</html>

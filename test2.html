@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>functions</title>
+</head>
+<body>
+
+<script>
+
+function second(first,a)
+{
+	
+	
+	var mul_result=[];
+	var i;
+	
+	for(i=0;i<a.length;i++)
+		{
+		
+		mul_result[i]=first(a[i]);
+		
+		}
+	
+	document.write("result is ");
+	for(i=0;i<mul_result.length;i++)
+		{
+		document.write(mul_result[i]+",");
+		}
+
+	
+	}
+
+second(function(value){return value*value;},[1,2,4,6,8,10]);
+
+		
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Inheritance</title>
+</head>
+<body>
+<script>
+var obj= {
+		
+	color: "red",
+	age: 23,
+	changeAge: function(object){
+		        return this.age+2;
+	           }
+				 
+};
+
+
+document.write("changed age is "+obj.changeAge());
+
+var child = Object.create(obj);
+child.age=6;
+
+document.write("\n child gets color from parent "+child.color);
+
+document.write(" changing child age "+child.changeAge());
+
+
+</script>
+
+</body>
+</html>
